@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario con Validaciones</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Formulario de Registro</h1>
+
+    <form id="registroForm" novalidate>
+      <div class="form-group">
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Ana Pérez" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo electrónico *</label>
+        <input type="email" id="correo" name="correo" required placeholder="Ej: ejemplo@mail.com" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="contrasena">Contraseña *</label>
+        <input type="password" id="contrasena" name="contrasena" required placeholder="Mínimo 8 caracteres" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmar">Confirmar contraseña *</label>
+        <input type="password" id="confirmar" name="confirmar" required placeholder="Repite la contraseña" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="edad">Edad *</label>
+        <input type="number" id="edad" name="edad" min="18" required placeholder="Ej: 22" />
+        <small class="error"></small>
+      </div>
+
+      <div class="botones">
+        <button type="submit" id="btnEnviar" disabled>Enviar</button>
+        <button type="reset" id="btnReiniciar">Reiniciar</button>
+      </div>
+    </form>
+
+
+    <div id="mensajeConfirmacion" class="mensaje-confirmacion" style="display:none;">
+  <svg class="icono-check" viewBox="0 0 24 24">
+    <path fill="none" stroke="#4CAF50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+      d="M4 12l6 6L20 6" />
+  </svg>
+  <span>¡Enviado correctamente!</span>
+</div>
+
+
+
+    <section id="requisitos">
+      <h2>Requisitos</h2>
+      <ul>
+        <li id="req-nombre">Nombre con mínimo 3 caracteres</li>
+        <li id="req-correo">Correo válido</li>
+        <li id="req-contrasena">Contraseña segura (8+ caracteres, número y símbolo)</li>
+        <li id="req-confirmar">Confirmación de contraseña</li>
+        <li id="req-edad">Edad mínima 18 años</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
