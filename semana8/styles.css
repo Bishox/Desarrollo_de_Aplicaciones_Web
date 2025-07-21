@@ -1,0 +1,12 @@
+/* Estilo personalizado */
+body {
+  background-color: #f0f8ff;
+}
+
+h2 {
+  color: #0d6efd;
+}
+
+table td {
+  text-align: center;
+}
