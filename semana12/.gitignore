@@ -1,0 +1,6 @@
+venv/
+*.pyc
+__pycache__/
+instance/
+database/usuarios.db
+.DS_Store

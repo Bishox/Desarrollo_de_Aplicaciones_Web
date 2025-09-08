@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Datos Guardados</h2>
+<a href="{{ url_for('formulario') }}" class="button">Volver al Formulario</a>
+
+<h3>Datos desde TXT</h3>
+<ul>
+    {% for dato in datos_txt %}
+    <li>{{ dato }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Datos desde JSON</h3>
+<ul>
+    {% for dato in datos_json %}
+    <li>Nombre: {{ dato.nombre }}, Email: {{ dato.email }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Datos desde CSV</h3>
+<ul>
+    {% for dato in datos_csv %}
+    <li>Nombre: {{ dato.nombre }}, Email: {{ dato.email }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Datos desde SQLite (Base de Datos)</h3>
+<ul>
+    {% for dato in datos_db %}
+    <li>Nombre: {{ dato.nombre }}, Email: {{ dato.email }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
