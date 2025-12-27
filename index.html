@@ -1,82 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencia de Tours - Aventuras Inolvidables</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería Dark</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-    <!-- Banner -->
-    <header>
-        <h1>Explora el Mundo con Nosotros</h1>
-        <p>Tours únicos, experiencias inolvidables</p>
-    </header>
-
-
-     <!-- Imagen destacada -->
-    <div style="text-align: center; margin-top: 20px;">
-        <img src="assets/img/banner.jpg" alt="Imagen de Banner" style="max-width: 90%; height: auto; border-radius: 10px;">
+  <header>
+    <h1>🖼️ Galería Interactiva</h1>
+    <div class="input-group">
+      <input type="url" id="image-url" placeholder="Pega una URL de imagen" />
+      <button id="add-image">➕</button>
+      <button id="delete-selected">🗑️</button>
     </div>
+  </header>
 
-    <!-- Video -->
-    <!-- Video -->
-<div style="text-align: center; margin: 40px 0;">
-    <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/oJvlnEAhLN4?si=8UbPyRi59FRn_85L" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>
-    </iframe>
-</div>
+  <main id="gallery" class="gallery"></main>
+
+  <script src="script.js"></script>
 
 
-    <!-- Tabla de Tours -->
-    <table>
-        <thead>
-            <tr>
-                <th>Nombre del Tour</th>
-                <th>Destino</th>
-                <th>Precio</th>
-                <th>Duración</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Aventura Amazónica</td>
-                <td>Tena, Napo</td>
-                <td>$120</td>
-                <td>3 días</td>
-            </tr>
-            <tr>
-                <td>Ruta de las Cascadas</td>
-                <td>Baños, Tungurahua</td>
-                <td>$90</td>
-                <td>2 días</td>
-            </tr>
-            <tr>
-                <td>Explora Galápagos</td>
-                <td>Islas Galápagos</td>
-                <td>$850</td>
-                <td>5 días</td>
-            </tr>
-            <tr>
-                <td>Cultura Andina</td>
-                <td>Otavalo, Imbabura</td>
-                <td>$75</td>
-                <td>1 día</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Aventuras del Ecuador. Todos los derechos reservados.</p>
-        <p>Contacto: info@aventurasecuador.com | Tel: +593 999 999 999</p>
-    </footer>
+<footer>
+  <p>© 2025 Galería Interactiva | Desarrollado por Bishox</p>
+</footer>
 
 </body>
 </html>
